@@ -30,7 +30,7 @@ module.exports = {
 			//redirect to the show action
 
 			//res.json(user);
-			res.redirect('/user/show'+user.id);
+			res.redirect('/user/show/'+user.id);
 		});
 	},
 	// render the profile view (e.g. /views/show.ejs)
@@ -44,7 +44,7 @@ module.exports = {
      });
      },
  
-   index: function (req, res, next) {
+ index: function (req, res, next) {
  
      // Get an array of all users in the User collection(e.g. table)
      User.find(function foundUsers (err, users) {
