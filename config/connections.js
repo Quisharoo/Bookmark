@@ -63,7 +63,7 @@ module.exports.connections = {
     // user: 'username',
     // password: 'password',
     // database: 'your_mongo_db_name_here'
-  },
+  }
 
   /***************************************************************************
   *                                                                          *
@@ -88,4 +88,6 @@ module.exports.connections = {
   * More adapters: https://github.com/balderdashy/sails                      *
   *                                                                          *
   ***************************************************************************/
+
+ 
 };
