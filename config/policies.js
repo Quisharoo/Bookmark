@@ -34,7 +34,7 @@ module.exports.policies = {
     show: "flash",
     edit: "flash",
     update: "flash",
-    '*': "admin"
+    '*': "flash"
   }
 
   /***************************************************************************

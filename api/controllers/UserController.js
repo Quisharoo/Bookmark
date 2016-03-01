@@ -11,6 +11,10 @@ module.exports = {
 		res.view();		
 	},
 
+  'search' : function(req, res){
+    res.view();
+  },
+
 	create: function (req, res, next){
 		//create a user with the parameters sent from
 		//the sign up form new.ejs
