@@ -47,7 +47,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/"> Bookmark</a>
+          <a class="navbar-brand" href="/">Bookmark</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -63,7 +63,7 @@
             <% if (session.authenticated) { %>
               <a class="btn btn-default navbar-btn navbar-right" href="/session/destroy">sign-out</a>
               <div class="navbar-form navbar-right">
-                  <button class="btn btn-default" type="button"><a href="/user/search">Go!</button></a>
+                  <a class="btn btn-default" type="button" href="/user/search">Go!</a>
                 <input type="text" class="form-control" placeholder="Search for...">
               </div><!-- /input-group -->
             <% } %>

@@ -14,6 +14,7 @@ module.exports = {
 		res.view('session/new');
 	},
 
+
 		create: function(req, res, next) {
 
 		// Check for email and password in params sent via the form, if none
