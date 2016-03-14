@@ -1,2 +1,4 @@
 <h1>Search Results: </h1>
-<h3><div id="resultDiv"></div></h3>
+<% _.each(user, function (user) { %>
+  <li><%= user.name %></li>
+   <% }) %>

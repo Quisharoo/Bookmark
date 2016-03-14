@@ -43,7 +43,7 @@ module.exports = {
 			delete obj._csrf;
 			return obj;
 		}
-
+		//deleting user password information from view by overridin toJSON method
 		},
 
 

@@ -63,7 +63,7 @@
             <% if (session.authenticated) { %>
               <a class="btn btn-default navbar-btn navbar-right" href="/session/destroy">sign-out</a>
               <div class="navbar-form navbar-right">
-                  <a class="btn btn-default" type="button" href="/user/search">Go!</a>
+                  <a class="btn btn-default" type="button" href="/user/search" method="POST" action="/user/search">Go!</a>
                 <input type="text" class="form-control" placeholder="Search for...">
               </div><!-- /input-group -->
             <% } %>

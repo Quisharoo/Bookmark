@@ -36,24 +36,17 @@ MongoClient.connect(url, function (err, db) {
 
     // Get the documents collection
     var collection = db.collection('user');
+    User.find().sort('name ASC').exec(function (err, results){
+  if (err) return res.serverError(err);
 
-    
-    collection.find({name: 'Jim Bean'}).toArray(function (err, result) {
-      if (err) {
-        console.log(err);
-      } else if (result.length) {
-        console.log('Found:', result);
-      } else {
-        console.log('No document(s) found with defined "find" criteria!');
-      }
-      //Close connection
+  return res.view('user/search', {
+    user: results
+  });
 
-      db.close();
-      res.view();
-    });
-  }
-});
-  },
+  });
+};
+  });
+},
 
 	create: function (req, res, next){
 		//create a user with the parameters sent from
